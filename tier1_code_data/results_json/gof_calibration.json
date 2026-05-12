@@ -1,0 +1,383 @@
+{
+  "logistic_gof": {
+    "pseudo_R2": 0.5625172495392214,
+    "log_likelihood": -8.026167719801258,
+    "aic": 22.052335439602516,
+    "bic": 27.788404455886955,
+    "llr_pvalue": 3.296441723085152e-05,
+    "brier_score": 0.05644031424662001,
+    "hl_test_5bin": {
+      "chi2": 0.8948712672690208,
+      "df": 3,
+      "p_value": 0.8266653107940293,
+      "n_bins_used": 5,
+      "bin_table": [
+        {
+          "bin": "(0.07218669800000001, 0.80498213]",
+          "n": 10,
+          "observed_pos": 4,
+          "expected_pos": 4.6684884185788285,
+          "observed_neg": 6,
+          "expected_neg": 5.3315115814211715
+        },
+        {
+          "bin": "(0.80498213, 0.99595513]",
+          "n": 10,
+          "observed_pos": 10,
+          "expected_pos": 9.338636723640494,
+          "observed_neg": 0,
+          "expected_neg": 0.6613632763595056
+        },
+        {
+          "bin": "(0.99595513, 0.99999219]",
+          "n": 10,
+          "observed_pos": 10,
+          "expected_pos": 9.992885313535742,
+          "observed_neg": 0,
+          "expected_neg": 0.0071146864642575025
+        },
+        {
+          "bin": "(0.99999219, 0.99999998]",
+          "n": 10,
+          "observed_pos": 10,
+          "expected_pos": 9.99998956257874,
+          "observed_neg": 0,
+          "expected_neg": 1.0437421259723578e-05
+        },
+        {
+          "bin": "(0.99999998, 1.0]",
+          "n": 10,
+          "observed_pos": 10,
+          "expected_pos": 9.999999981666205,
+          "observed_neg": 0,
+          "expected_neg": 1.833379492666154e-08
+        }
+      ]
+    },
+    "calibration_5bin": [
+      {
+        "n": 10,
+        "mean_pred": 0.46684884185788283,
+        "observed_freq": 0.4
+      },
+      {
+        "n": 10,
+        "mean_pred": 0.9338636723640494,
+        "observed_freq": 1.0
+      },
+      {
+        "n": 10,
+        "mean_pred": 0.9992885313535742,
+        "observed_freq": 1.0
+      },
+      {
+        "n": 10,
+        "mean_pred": 0.999998956257874,
+        "observed_freq": 1.0
+      },
+      {
+        "n": 10,
+        "mean_pred": 0.9999999981666206,
+        "observed_freq": 1.0
+      }
+    ],
+    "mean_calibration_error": 0.026739536743152915
+  },
+  "pod_gof": {
+    "pseudo_R2": 0.0830037066061795,
+    "log_likelihood": -258.8321630635018,
+    "aic": 521.6643261270036,
+    "bic": 530.093542323848,
+    "beta_0": 1.979025727126316,
+    "beta_1": 0.9931062999652184,
+    "brier_score": 0.17064369492829526,
+    "hl_test_10bin": {
+      "chi2": 4.1320223309270885,
+      "df": 8,
+      "p_value": 0.8450197266453241,
+      "n_bins_used": 10,
+      "bin_table": [
+        {
+          "bin": "(0.423, 0.577]",
+          "n": 50,
+          "observed_pos": 25,
+          "expected_pos": 21.183982587216402,
+          "observed_neg": 25,
+          "expected_neg": 28.816017412783598
+        },
+        {
+          "bin": "(0.577, 0.668]",
+          "n": 50,
+          "observed_pos": 27,
+          "expected_pos": 29.70188873395801,
+          "observed_neg": 23,
+          "expected_neg": 20.29811126604199
+        },
+        {
+          "bin": "(0.668, 0.727]",
+          "n": 50,
+          "observed_pos": 31,
+          "expected_pos": 34.32011290606247,
+          "observed_neg": 19,
+          "expected_neg": 15.67988709393753
+        },
+        {
+          "bin": "(0.727, 0.768]",
+          "n": 50,
+          "observed_pos": 36,
+          "expected_pos": 37.2208259998817,
+          "observed_neg": 14,
+          "expected_neg": 12.779174000118303
+        },
+        {
+          "bin": "(0.768, 0.799]",
+          "n": 50,
+          "observed_pos": 39,
+          "expected_pos": 39.212917738507855,
+          "observed_neg": 11,
+          "expected_neg": 10.787082261492145
+        },
+        {
+          "bin": "(0.799, 0.822]",
+          "n": 50,
+          "observed_pos": 40,
+          "expected_pos": 40.66594584965624,
+          "observed_neg": 10,
+          "expected_neg": 9.33405415034376
+        },
+        {
+          "bin": "(0.822, 0.841]",
+          "n": 50,
+          "observed_pos": 44,
+          "expected_pos": 41.772868193685696,
+          "observed_neg": 6,
+          "expected_neg": 8.227131806314304
+        },
+        {
+          "bin": "(0.841, 0.856]",
+          "n": 50,
+          "observed_pos": 44,
+          "expected_pos": 42.64431483287931,
+          "observed_neg": 6,
+          "expected_neg": 7.35568516712069
+        },
+        {
+          "bin": "(0.856, 0.868]",
+          "n": 50,
+          "observed_pos": 44,
+          "expected_pos": 43.348279871445484,
+          "observed_neg": 6,
+          "expected_neg": 6.6517201285545156
+        },
+        {
+          "bin": "(0.868, 0.879]",
+          "n": 50,
+          "observed_pos": 44,
+          "expected_pos": 43.92886328670684,
+          "observed_neg": 6,
+          "expected_neg": 6.071136713293157
+        }
+      ]
+    },
+    "calibration_10bin": [
+      {
+        "n": 50,
+        "mean_pred": 0.42367965174432803,
+        "observed_freq": 0.5
+      },
+      {
+        "n": 50,
+        "mean_pred": 0.5940377746791602,
+        "observed_freq": 0.54
+      },
+      {
+        "n": 50,
+        "mean_pred": 0.6864022581212494,
+        "observed_freq": 0.62
+      },
+      {
+        "n": 50,
+        "mean_pred": 0.7444165199976339,
+        "observed_freq": 0.72
+      },
+      {
+        "n": 50,
+        "mean_pred": 0.7842583547701572,
+        "observed_freq": 0.78
+      },
+      {
+        "n": 50,
+        "mean_pred": 0.8133189169931248,
+        "observed_freq": 0.8
+      },
+      {
+        "n": 50,
+        "mean_pred": 0.8354573638737139,
+        "observed_freq": 0.88
+      },
+      {
+        "n": 50,
+        "mean_pred": 0.8528862966575862,
+        "observed_freq": 0.88
+      },
+      {
+        "n": 50,
+        "mean_pred": 0.8669655974289097,
+        "observed_freq": 0.88
+      },
+      {
+        "n": 50,
+        "mean_pred": 0.8785772657341369,
+        "observed_freq": 0.88
+      }
+    ],
+    "mean_calibration_error": 0.03248676491226507
+  },
+  "pod_gate_pass_gof": {
+    "pseudo_R2": 0.13844241976682714,
+    "beta_0": 2.746133752509233,
+    "beta_1": 1.3061185522867553,
+    "brier_score": 0.1320779909763086,
+    "hl_test_10bin": {
+      "chi2": 8.865801573716793,
+      "df": 8,
+      "p_value": 0.3537430562318392,
+      "n_bins_used": 10,
+      "bin_table": [
+        {
+          "bin": "(0.434, 0.634]",
+          "n": 46,
+          "observed_pos": 25,
+          "expected_pos": 20.011858039980453,
+          "observed_neg": 21,
+          "expected_neg": 25.988141960019547
+        },
+        {
+          "bin": "(0.634, 0.742]",
+          "n": 46,
+          "observed_pos": 27,
+          "expected_pos": 30.160403782533773,
+          "observed_neg": 19,
+          "expected_neg": 15.839596217466227
+        },
+        {
+          "bin": "(0.742, 0.807]",
+          "n": 46,
+          "observed_pos": 31,
+          "expected_pos": 35.1345963891571,
+          "observed_neg": 15,
+          "expected_neg": 10.865403610842897
+        },
+        {
+          "bin": "(0.807, 0.848]",
+          "n": 46,
+          "observed_pos": 36,
+          "expected_pos": 37.94170846372638,
+          "observed_neg": 10,
+          "expected_neg": 8.058291536273622
+        },
+        {
+          "bin": "(0.848, 0.876]",
+          "n": 46,
+          "observed_pos": 39,
+          "expected_pos": 39.699998946378784,
+          "observed_neg": 7,
+          "expected_neg": 6.300001053621216
+        },
+        {
+          "bin": "(0.876, 0.896]",
+          "n": 46,
+          "observed_pos": 40,
+          "expected_pos": 40.88658678458885,
+          "observed_neg": 6,
+          "expected_neg": 5.11341321541115
+        },
+        {
+          "bin": "(0.896, 0.911]",
+          "n": 46,
+          "observed_pos": 44,
+          "expected_pos": 41.732585038990635,
+          "observed_neg": 2,
+          "expected_neg": 4.267414961009365
+        },
+        {
+          "bin": "(0.911, 0.923]",
+          "n": 46,
+          "observed_pos": 44,
+          "expected_pos": 42.361544893292255,
+          "observed_neg": 2,
+          "expected_neg": 3.6384551067077453
+        },
+        {
+          "bin": "(0.923, 0.932]",
+          "n": 46,
+          "observed_pos": 44,
+          "expected_pos": 42.84476482154139,
+          "observed_neg": 2,
+          "expected_neg": 3.155235178458611
+        },
+        {
+          "bin": "(0.932, 0.94]",
+          "n": 46,
+          "observed_pos": 44,
+          "expected_pos": 43.22595283981037,
+          "observed_neg": 2,
+          "expected_neg": 2.7740471601896317
+        }
+      ]
+    },
+    "calibration_10bin": [
+      {
+        "n": 46,
+        "mean_pred": 0.4350403921734881,
+        "observed_freq": 0.5434782608695652
+      },
+      {
+        "n": 46,
+        "mean_pred": 0.6556609517942125,
+        "observed_freq": 0.5869565217391305
+      },
+      {
+        "n": 46,
+        "mean_pred": 0.7637955736773283,
+        "observed_freq": 0.6739130434782609
+      },
+      {
+        "n": 46,
+        "mean_pred": 0.824819749211443,
+        "observed_freq": 0.782608695652174
+      },
+      {
+        "n": 46,
+        "mean_pred": 0.8630434553560605,
+        "observed_freq": 0.8478260869565217
+      },
+      {
+        "n": 46,
+        "mean_pred": 0.8888388431432359,
+        "observed_freq": 0.8695652173913043
+      },
+      {
+        "n": 46,
+        "mean_pred": 0.9072301095432747,
+        "observed_freq": 0.9565217391304348
+      },
+      {
+        "n": 46,
+        "mean_pred": 0.9209031498541794,
+        "observed_freq": 0.9565217391304348
+      },
+      {
+        "n": 46,
+        "mean_pred": 0.9314079309030737,
+        "observed_freq": 0.9565217391304348
+      },
+      {
+        "n": 46,
+        "mean_pred": 0.9396946269523994,
+        "observed_freq": 0.9565217391304348
+      }
+    ],
+    "mean_calibration_error": 0.0470578015929778
+  }
+}

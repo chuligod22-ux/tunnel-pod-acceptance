@@ -1,0 +1,79 @@
+{
+  "method": "M1 (4-IQ, no sigma) numerical inversion at a*=0.5mm, P_d=0.9",
+  "model_source": "A5b_extended_logistic_with_sigma.json:model1_4iq_no_sigma",
+  "fit_check_max_relative_deviation_vs_A5b": 4.452337896206695e-05,
+  "logit_target": 2.1972245773362196,
+  "a_star_mm": 0.5,
+  "fixed_axis_values_medians": {
+    "C_M": 0.2883,
+    "L_90": 148.0,
+    "mtf_h": 0.1036944444444444,
+    "bew_h": 4.960520833333334
+  },
+  "M1_coefficients_refit": {
+    "intercept": 18.353130337959332,
+    "width_mm": 3.9007406292927986,
+    "C_M": -2.64520584397879,
+    "L_90": 0.014250526148079397,
+    "mtf_h": -110.06798679892113,
+    "bew_h": -1.7036743552350815
+  },
+  "thresholds": {
+    "C_M": {
+      "point": 0.1326184392764242,
+      "ci_lower": -0.6551963281634069,
+      "ci_upper": 1.476650519570621,
+      "direction": "minimum",
+      "interpretation": "minimum Michelson contrast for P_d = 0.9 at a* = 0.5 mm",
+      "ci_method": "cluster_bootstrap_percentile",
+      "sample_min": 0.0079,
+      "sample_max": 0.3878,
+      "in_sample_range": true,
+      "bootstrap_n_finite": 2000
+    },
+    "L_90": {
+      "point": 176.89786453823294,
+      "ci_lower": 72.29573828455116,
+      "ci_upper": 265.89152222098744,
+      "direction": "minimum",
+      "interpretation": "minimum 90th-percentile luminance for the same target",
+      "ci_method": "cluster_bootstrap_percentile",
+      "sample_min": 47.0,
+      "sample_max": 255.0,
+      "in_sample_range": true,
+      "bootstrap_n_finite": 2000
+    },
+    "mtf_h": {
+      "point": 0.09995303164856886,
+      "ci_lower": -0.6148163711361257,
+      "ci_upper": 0.461554090240818,
+      "direction": "minimum (with caveat)",
+      "interpretation": "sign-reversed inversion owing to MTF50 close-distance saturation confounding (Sec 4.3, Sec 5.4)",
+      "ci_method": "cluster_bootstrap_percentile",
+      "sample_min": 0.0789938888888888,
+      "sample_max": 0.1492712499999999,
+      "in_sample_range": true,
+      "bootstrap_n_finite": 2000
+    },
+    "bew_h": {
+      "point": 4.718802236724581,
+      "ci_lower": 3.5345962942550493,
+      "ci_upper": 7.347928143157158,
+      "direction": "maximum",
+      "interpretation": "maximum horizontal edge-spread width for the same target",
+      "ci_method": "cluster_bootstrap_percentile",
+      "sample_min": 3.761416666666667,
+      "sample_max": 7.222872023809524,
+      "in_sample_range": true,
+      "bootstrap_n_finite": 2000
+    }
+  },
+  "bootstrap_B": 2000,
+  "bootstrap_failures": 0,
+  "n_clusters": 47,
+  "n_rows": 470,
+  "warnings": [
+    "C_M: bootstrap spread (2.13) exceeds 10x point estimate (0.133); CI should be interpreted with caution",
+    "mtf_h: bootstrap spread (1.08) exceeds 10x point estimate (0.1); CI should be interpreted with caution"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "auc_univariate": {
+    "C_M": {
+      "median": 0.6098484848484849,
+      "ci_lower": 0.5075757575757576,
+      "ci_upper": 0.8712121212121212,
+      "n_valid": 2000
+    },
+    "L_90": {
+      "median": 0.6875,
+      "ci_lower": 0.5113636363636364,
+      "ci_upper": 0.9867424242424243,
+      "n_valid": 2000
+    }
+  },
+  "logistic_bootstrap": {
+    "n_converged": 1757,
+    "auc_combined": {
+      "median": 0.9583333333333334,
+      "ci_lower": 0.6363636363636364,
+      "ci_upper": 0.9659090909090909
+    },
+    "beta_const": {
+      "median": -43.7214680304571,
+      "ci_lower": -88.83782901333075,
+      "ci_upper": -0.4809431217881381
+    },
+    "beta_C_M": {
+      "median": 102.95081056647875,
+      "ci_lower": -16.802165807922638,
+      "ci_upper": 203.3539157567307
+    },
+    "beta_L_90": {
+      "median": 0.15822362818582644,
+      "ci_lower": 0.08009967659173142,
+      "ci_upper": 0.3270398205814135
+    }
+  },
+  "gate_metrics_bootstrap": {
+    "accuracy": {
+      "median": 0.96,
+      "ci_lower": 0.92,
+      "ci_upper": 1.0
+    },
+    "sensitivity": {
+      "median": 1.0,
+      "ci_lower": 1.0,
+      "ci_upper": 1.0
+    },
+    "specificity": {
+      "median": 0.6666666666666666,
+      "ci_lower": 0.3333333333333333,
+      "ci_upper": 1.0
+    }
+  },
+  "pod_pooled_bootstrap": {
+    "n_converged": 2000,
+    "beta_0": {
+      "median": 1.9788439341619923,
+      "ci_lower": 1.302697387017287,
+      "ci_upper": 2.810482312516333
+    },
+    "beta_1": {
+      "median": 1.0080170992846795,
+      "ci_lower": 0.6574048363983668,
+      "ci_upper": 1.4377677403056128
+    },
+    "a50_mm": {
+      "median": 0.13756571533977754,
+      "ci_lower": 0.067839450845193,
+      "ci_upper": 0.23477954807170343
+    },
+    "a90_mm": {
+      "median": 1.238040241499095,
+      "ci_lower": 0.6092001712241044,
+      "ci_upper": 3.416595240623251
+    },
+    "a90_95_mm": 2.884075222791657
+  },
+  "pod_gate_pass_bootstrap": {
+    "n_converged": 2000,
+    "beta_0": {
+      "median": 2.7919168019941236,
+      "ci_lower": 2.0255007801296165,
+      "ci_upper": 3.728142597492952
+    },
+    "beta_1": {
+      "median": 1.3425850515531716,
+      "ci_lower": 0.8958687502843832,
+      "ci_upper": 1.796051283831015
+    },
+    "a50_mm": {
+      "median": 0.12259867936676923,
+      "ci_lower": 0.06808234263193678,
+      "ci_upper": 0.19032464730466048
+    },
+    "a90_mm": {
+      "median": 0.6471145154638238,
+      "ci_lower": 0.3774073430884032,
+      "ci_upper": 1.1831591683095832
+    },
+    "a90_95_mm": 1.0604040480318273
+  },
+  "pod_gate_fail": {
+    "note": "All gate-fail conditions have detection_rate=0 (no variability for POD fitting).",
+    "n_rows": 40,
+    "detection_rate": 0.0
+  }
+}

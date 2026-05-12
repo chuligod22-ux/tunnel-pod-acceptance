@@ -1,0 +1,399 @@
+{
+  "label_comparison": {
+    "total_rows": 500,
+    "consistent": 296,
+    "mono_extra": 204,
+    "vis_extra": 0,
+    "consistency_pct": 59.199999999999996
+  },
+  "detection_rate_per_width": {
+    "0.1mm": {
+      "monotonic": 0.5,
+      "visible": 0.5
+    },
+    "0.2mm": {
+      "monotonic": 0.54,
+      "visible": 0.24
+    },
+    "0.3mm": {
+      "monotonic": 0.62,
+      "visible": 0.3
+    },
+    "0.4mm": {
+      "monotonic": 0.72,
+      "visible": 0.54
+    },
+    "0.5mm": {
+      "monotonic": 0.78,
+      "visible": 0.3
+    },
+    "0.6mm": {
+      "monotonic": 0.8,
+      "visible": 0.24
+    },
+    "0.7mm": {
+      "monotonic": 0.88,
+      "visible": 0.62
+    },
+    "0.8mm": {
+      "monotonic": 0.88,
+      "visible": 0.28
+    },
+    "0.9mm": {
+      "monotonic": 0.88,
+      "visible": 0.24
+    },
+    "1.0mm": {
+      "monotonic": 0.88,
+      "visible": 0.14
+    }
+  },
+  "pod_pooled": {
+    "monotonic": {
+      "label": "monotonic_pooled",
+      "n": 500,
+      "detection_rate": 0.748,
+      "beta_0": 1.9790257271263156,
+      "beta_1": 0.993106299965218,
+      "pseudo_R2": 0.08300370660617928,
+      "log_lik": -258.83216306350187,
+      "aic": 521.6643261270037,
+      "a50_mm": 0.13631822468401,
+      "a90_mm": 1.245719767157911
+    },
+    "visible": {
+      "label": "visible_pooled",
+      "n": 500,
+      "detection_rate": 0.34,
+      "beta_0": -0.9131671588282837,
+      "beta_1": -0.30693035140399333,
+      "pseudo_R2": 0.00817180588932942,
+      "log_lik": -317.898530212467,
+      "aic": 639.797060424934,
+      "a50_mm": 0.05103922473993596,
+      "a90_mm": 3.971156004865326e-05
+    }
+  },
+  "pod_gate_pass": {
+    "monotonic": {
+      "label": "monotonic_gate_pass",
+      "n": 460,
+      "detection_rate": 0.8130434782608695,
+      "beta_0": 2.7461337525092335,
+      "beta_1": 1.3061185522867558,
+      "pseudo_R2": 0.13844241976682692,
+      "log_lik": -190.93722738122847,
+      "aic": 385.87445476245693,
+      "a50_mm": 0.12214884622040197,
+      "a90_mm": 0.6568761142603601
+    },
+    "visible": {
+      "label": "visible_gate_pass",
+      "n": 460,
+      "detection_rate": 0.3695652173913043,
+      "beta_0": -0.7958784373109697,
+      "beta_1": -0.3230820992126018,
+      "pseudo_R2": 0.009080638522626416,
+      "log_lik": -300.2614318524639,
+      "aic": 604.5228637049278,
+      "a50_mm": 0.08514549402202445,
+      "a90_mm": 9.475480068537118e-05
+    }
+  },
+  "visible_completeness": {
+    "partial_visible_list": 37,
+    "user_labeled": 12,
+    "no_visible_info": 1
+  },
+  "avg_visible_count": 2.864864864864865,
+  "inconsistency_count": 204,
+  "sample_inconsistencies": [
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 2.5,
+      "width_mm": 0.5,
+      "mdw": 0.4,
+      "visible_list": [
+        0.4,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 2.5,
+      "width_mm": 0.6,
+      "mdw": 0.4,
+      "visible_list": [
+        0.4,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 2.5,
+      "width_mm": 1.0,
+      "mdw": 0.4,
+      "visible_list": [
+        0.4,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 3.5,
+      "width_mm": 0.7,
+      "mdw": 0.6,
+      "visible_list": [
+        0.6
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 3.5,
+      "width_mm": 0.8,
+      "mdw": 0.6,
+      "visible_list": [
+        0.6
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 3.5,
+      "width_mm": 0.9,
+      "mdw": 0.6,
+      "visible_list": [
+        0.6
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 3.5,
+      "width_mm": 1.0,
+      "mdw": 0.6,
+      "visible_list": [
+        0.6
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 5.5,
+      "width_mm": 0.2,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 5.5,
+      "width_mm": 0.3,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 5.5,
+      "width_mm": 0.5,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 5.5,
+      "width_mm": 0.6,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 5.5,
+      "width_mm": 0.7,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 5.5,
+      "width_mm": 0.8,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 5.5,
+      "width_mm": 0.9,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 100,
+      "dist": 5.5,
+      "width_mm": 1.0,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 200,
+      "dist": 2.5,
+      "width_mm": 0.2,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4,
+        0.7
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 200,
+      "dist": 2.5,
+      "width_mm": 0.3,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4,
+        0.7
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 200,
+      "dist": 2.5,
+      "width_mm": 0.5,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4,
+        0.7
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 200,
+      "dist": 2.5,
+      "width_mm": 0.6,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4,
+        0.7
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    },
+    {
+      "speed": 60,
+      "iso": 200,
+      "dist": 2.5,
+      "width_mm": 0.8,
+      "mdw": 0.1,
+      "visible_list": [
+        0.1,
+        0.4,
+        0.7
+      ],
+      "mono": 1,
+      "vis": 0,
+      "note": "monotonic says detected (\u2265MDW), but not in visible list"
+    }
+  ]
+}

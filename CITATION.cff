@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite both the paper and the dataset."
+title: "Supplementary material for: A POD-Based Image Quality Acceptance Framework for Crack Detection in High-Speed Mobile Tunnel Inspection"
+type: software
+authors:
+  - family-names: Lee
+    given-names: Chulhee
+    affiliation: "Korea Institute of Civil Engineering and Building Technology (KICT)"
+  - family-names: Kim
+    given-names: Donggyou
+    affiliation: "Korea Institute of Civil Engineering and Building Technology (KICT)"
+  - family-names: Kim
+    given-names: Dongku
+    affiliation: "Korea Institute of Civil Engineering and Building Technology (KICT)"
+  - family-names: An
+    given-names: Junbeom
+    affiliation: "Korea Institute of Civil Engineering and Building Technology (KICT)"
+version: "1.0.0"
+date-released: "2026-06-01"
+license: "MIT"
+license-url: "https://opensource.org/licenses/MIT"
+repository-code: "https://github.com/chuligod22-ux/tunnel-pod-acceptance"
+url: "https://github.com/chuligod22-ux/tunnel-pod-acceptance"
+keywords:
+  - tunnel inspection
+  - machine vision
+  - image quality
+  - crack detection
+  - Probability of Detection
+  - POD
+  - MTF
+  - motion blur
+  - high-speed imaging
+  - non-destructive evaluation
+preferred-citation:
+  type: article
+  title: "A POD-Based Image Quality Acceptance Framework for Crack Detection in High-Speed Mobile Tunnel Inspection"
+  authors:
+    - family-names: Lee
+      given-names: Chulhee
+    - family-names: Kim
+      given-names: Donggyou
+    - family-names: Kim
+      given-names: Dongku
+    - family-names: An
+      given-names: Junbeom
+  journal: "IEEE Transactions on Instrumentation and Measurement"
+  year: 2026
+  doi: "<paper DOI to be added after acceptance>"

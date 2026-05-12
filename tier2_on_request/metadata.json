@@ -1,0 +1,38 @@
+{
+  "upload_type": "dataset",
+  "title": "Image quality and crack-detection data for IEEE TIM acceptance framework paper (representative raw frames)",
+  "creators": [
+    {"name": "Lee, Chulhee", "affiliation": "Korea Institute of Civil Engineering and Building Technology (KICT)"},
+    {"name": "Kim, Donggyou", "affiliation": "Korea Institute of Civil Engineering and Building Technology (KICT)"},
+    {"name": "Kim, Dongku", "affiliation": "Korea Institute of Civil Engineering and Building Technology (KICT)"},
+    {"name": "An, Junbeom", "affiliation": "Korea Institute of Civil Engineering and Building Technology (KICT)"}
+  ],
+  "description": "Four representative cam1 raw frames used in Fig. 6 of the paper 'A POD-Based Image Quality Acceptance Framework for Crack Detection in High-Speed Mobile Tunnel Inspection' (IEEE Transactions on Instrumentation and Measurement). The frames are captured at 0.3 mm/pixel ground sampling distance under the following inspection conditions: (a) 60 km/h, ISO 200, 2.5 m stand-off (best-case); (b) 80 km/h, ISO 200, 4.5 m (typical); (c) 60 km/h, ISO 200, 6.5 m (boundary, LED-strobe-limited); (d) 60 km/h, ISO 1600, 2.5 m (saturated). Each frame shows a test panel with an Imatest eSFR slant-edge chart and a crack-width specimen panel (0.1-1.0 mm). The dataset supports reproducibility of image-quality (IQ) metric measurements (C_M, L_90, MTF50, BEW, sigma_motion) and visibility-based crack-detection outcomes reported in the paper.",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "tunnel inspection",
+    "machine vision",
+    "image quality",
+    "crack detection",
+    "Probability of Detection",
+    "POD",
+    "MTF",
+    "motion blur",
+    "high-speed imaging",
+    "non-destructive evaluation"
+  ],
+  "communities": [],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "<paper DOI to be added after IEEE TIM acceptance>",
+      "resource_type": "publication-article"
+    },
+    {
+      "relation": "isPartOf",
+      "identifier": "<Tier 1 GitHub repository URL to be added after creation>",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Anonymization performed prior to upload: EXIF metadata stripped, no facility-identifying signage visible, no third-party persons/vehicles present, chart-bearing region only. See ANONYMIZATION_LOG.txt in the deposit for inspection record. The complete 50-condition raw image archive is available from the corresponding author at KICT on reasonable request."
+}

@@ -1,0 +1,16 @@
+PLACEHOLDER for Tier 2 raw frames.
+
+This directory remains empty in the public GitHub repository. The four cleaned
+(EXIF-stripped, visually verified) cam1 raw frames listed below are released on
+request only — see ../README_TIER2.md for the request-fulfilment procedure and
+anonymisation checklist.
+
+  - cam1_v60_iso200_d25.png   (60 km/h, ISO 200, 2.5 m, best-case)
+  - cam1_v80_iso200_d45.png   (80 km/h, ISO 200, 4.5 m, typical)
+  - cam1_v60_iso200_d65.png   (60 km/h, ISO 200, 6.5 m, boundary)
+  - cam1_v60_iso1600_d25.png  (60 km/h, ISO 1600, 2.5 m, saturated)
+
+Each frame is ~60-80 MB at native cam1 resolution and bit depth.
+
+Source frames are referenced by `code/figures/v2_figures/fig06_representative_imagery.py`
+in Tier 1; the rendered Fig. 6 PDF is included in the paper's figures directory.

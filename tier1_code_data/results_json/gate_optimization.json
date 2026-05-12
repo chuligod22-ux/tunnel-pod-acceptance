@@ -1,0 +1,114 @@
+{
+  "baseline": {
+    "thr": {
+      "C_M": 0.05,
+      "L_90": 55
+    },
+    "TP": 44,
+    "TN": 4,
+    "FP": 2,
+    "FN": 0,
+    "accuracy": 0.96,
+    "sensitivity": 1.0,
+    "specificity": 0.6666666666666666
+  },
+  "univariate": [
+    {
+      "metric": "C_M",
+      "AUC": 0.46212121212121215,
+      "thr": 0.0625,
+      "J": 0.33333333333333337,
+      "TP": 44,
+      "TN": 2,
+      "FP": 4,
+      "FN": 0,
+      "accuracy": 0.92,
+      "sensitivity": 1.0,
+      "specificity": 0.3333333333333333
+    },
+    {
+      "metric": "L_90",
+      "AUC": 0.6780303030303031,
+      "thr": 89.0,
+      "J": 0.5757575757575757,
+      "TP": 40,
+      "TN": 4,
+      "FP": 2,
+      "FN": 4,
+      "accuracy": 0.88,
+      "sensitivity": 0.9090909090909091,
+      "specificity": 0.6666666666666666
+    }
+  ],
+  "logistic": {
+    "coefficients": {
+      "const": -44.87774158955947,
+      "C_M": 104.59279022454278,
+      "L_90": 0.16273679983660547
+    },
+    "pseudo_R2": 0.5625172495392214,
+    "LLR_pvalue": 3.296441723085152e-05,
+    "best_p_threshold": 0.2,
+    "in_sample": {
+      "TP": 44,
+      "TN": 2,
+      "FP": 4,
+      "FN": 0,
+      "accuracy": 0.92,
+      "sensitivity": 1.0,
+      "specificity": 0.3333333333333333
+    },
+    "LOO": {
+      "TP": 1,
+      "TN": 0,
+      "FP": 0,
+      "FN": 0,
+      "accuracy": 1.0,
+      "sensitivity": 1.0,
+      "specificity": NaN
+    }
+  },
+  "grid_search": {
+    "best_accuracy": 0.96,
+    "n_perfect_combos": 0,
+    "perfect_combos_first_10": []
+  },
+  "recommendations": {
+    "baseline_dual_criterion": {
+      "rule": "C_M >= 0.05 AND L_90 >= 55",
+      "metrics": {
+        "TP": 44,
+        "TN": 4,
+        "FP": 2,
+        "FN": 0,
+        "accuracy": 0.96,
+        "sensitivity": 1.0,
+        "specificity": 0.6666666666666666
+      },
+      "note": "\ub17c\ubb38 \ubcf4\uace0. 96% accuracy, 2 FP"
+    },
+    "optimized_dual_criterion": null,
+    "logistic_decision_rule": {
+      "rule": "P(detect) = sigmoid(-44.88 + 104.59\u00b7C_M + 0.1627\u00b7L_90) >= 0.20",
+      "in_sample_metrics": {
+        "TP": 44,
+        "TN": 2,
+        "FP": 4,
+        "FN": 0,
+        "accuracy": 0.92,
+        "sensitivity": 1.0,
+        "specificity": 0.3333333333333333
+      },
+      "loo_metrics": {
+        "TP": 1,
+        "TN": 0,
+        "FP": 0,
+        "FN": 0,
+        "accuracy": 1.0,
+        "sensitivity": 1.0,
+        "specificity": NaN
+      },
+      "note": "Logistic regression based, generalization \uac80\uc99d"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "m1_coef": {
+    "const": 18.353388191688072,
+    "width_mm": 3.900752387945602,
+    "C_M": -2.6452918099251153,
+    "L_90": 0.014251160657906018,
+    "mtf_h": -110.0708032348943,
+    "bew_h": -1.7036814305130052
+  },
+  "univariate_vs_multivariable": {
+    "C_M": {
+      "uni_coef": 0.7154,
+      "uni_sign": "+"
+    },
+    "L_90": {
+      "uni_coef": 0.007,
+      "uni_sign": "+"
+    },
+    "mtf_h": {
+      "uni_coef": -22.4651,
+      "uni_sign": "-"
+    },
+    "bew_h": {
+      "uni_coef": -0.1504,
+      "uni_sign": "-"
+    }
+  },
+  "mtf_distance_confounding": {
+    "corr_mtf_h_distance": -0.511,
+    "mtf_slope_near_d<=3.5": -19.908,
+    "mtf_slope_far_d>=4.5": -34.44,
+    "mtf_coef_adjusted_for_L90": -38.335,
+    "note": "단변량/근원거리 분리/노출통제 시 부호가 바뀌면 근거리 포화 교락"
+  },
+  "threshold_physical": {
+    "C_M": {
+      "threshold": 0.1326,
+      "physical_range": [
+        0.0,
+        1.0
+      ],
+      "sample_range": [
+        0.008,
+        0.388
+      ],
+      "coef_sign": "-",
+      "within_physical": true
+    },
+    "L_90": {
+      "threshold": 176.8962,
+      "physical_range": [
+        0.0,
+        255.0
+      ],
+      "sample_range": [
+        47.0,
+        255.0
+      ],
+      "coef_sign": "+",
+      "within_physical": true
+    },
+    "mtf_h": {
+      "threshold": 0.1,
+      "physical_range": [
+        0.0,
+        0.5
+      ],
+      "sample_range": [
+        0.079,
+        0.149
+      ],
+      "coef_sign": "-",
+      "within_physical": true
+    },
+    "bew_h": {
+      "threshold": 4.7188,
+      "physical_range": [
+        0.0,
+        null
+      ],
+      "sample_range": [
+        3.761,
+        7.223
+      ],
+      "coef_sign": "-",
+      "within_physical": true
+    },
+    "_note": "C_M 임계 CI가 음수 포함(A6 [−0.66,1.48])→물리적 무의미, 하한 사실상 무제약. L_90이 신뢰 게이트."
+  }
+}

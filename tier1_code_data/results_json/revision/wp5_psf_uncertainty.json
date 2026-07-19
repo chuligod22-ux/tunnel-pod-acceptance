@@ -1,0 +1,133 @@
+{
+  "repeatability": {
+    "mtf_h": {
+      "grand_mean": 0.1063,
+      "typical_abs_std": 0.0113,
+      "repeatability_cv_pct": 10.25,
+      "n_frames_typical": 18
+    },
+    "mtf_v": {
+      "grand_mean": 0.1264,
+      "typical_abs_std": 0.0119,
+      "repeatability_cv_pct": 9.17,
+      "n_frames_typical": 18
+    },
+    "bew_h": {
+      "grand_mean": 5.1524,
+      "typical_abs_std": 0.7649,
+      "repeatability_cv_pct": 12.51,
+      "n_frames_typical": 24
+    },
+    "bew_v": {
+      "grand_mean": 4.6285,
+      "typical_abs_std": 0.5787,
+      "repeatability_cv_pct": 10.44,
+      "n_frames_typical": 24
+    }
+  },
+  "isotropic_psf": {
+    "bew_v_across_conditions": {
+      "mean": 4.628,
+      "std": 0.929,
+      "cv_pct": 20.1,
+      "range": [
+        3.59,
+        8.26
+      ],
+      "note": "조건간 CV — 조건내 반복성(WP5-1)과 비교: 초과분이 실제 광학변동"
+    },
+    "bew_v_anova": {
+      "r2": 0.214,
+      "coef": {
+        "Intercept": 4.09175,
+        "dist": 0.11037,
+        "iso": 0.00072,
+        "speed": -0.00578
+      },
+      "p_values": {
+        "Intercept": 0.0001,
+        "dist": 0.2008,
+        "iso": 0.0021,
+        "speed": 0.6332
+      },
+      "note": "광학기원이면 dist(초점/GSD) 유의, speed 무의미 기대"
+    },
+    "hv_ratio_vs_speed": {
+      "mean_by_speed": {
+        "60": 1.072,
+        "80": 1.171
+      },
+      "speed_coef": 0.00492,
+      "speed_p": 0.0,
+      "note": "isotropic optics + along-track motion이면 hv_ratio가 속도와 함께 증가"
+    },
+    "mtf_isotropy": {
+      "mtf_v_mean": 0.1264,
+      "mtf_h_mean": 0.1063,
+      "v_sharper_frac": 0.96,
+      "note": "V가 대체로 sharper(mtf_v>mtf_h)면 모션이 H에만 작용 = 분해 타당"
+    },
+    "bew_detection_corr": {
+      "pearson_bew_v_vs_detrate": -0.294,
+      "pearson_bew_h_vs_detrate": -0.355,
+      "n_conditions": 50,
+      "note": "광학-only BEW_V의 검출 상관 (약하면 검출은 노출/모션 주도)"
+    }
+  },
+  "pod_sensitivity": {
+    "base_auc": 0.8398,
+    "mc_auc_mean": 0.8213,
+    "mc_auc_std": 0.0187,
+    "mc_auc_ci95": [
+      0.791,
+      0.8615
+    ],
+    "perturbation_cv": {
+      "mtf_h": 0.102,
+      "bew_h": 0.125,
+      "C_M": 0.1,
+      "L_90": 0.05,
+      "width_mm": 0.0
+    },
+    "coef_stability": {
+      "const": {
+        "base": 18.3534,
+        "mc_mean": -0.0061,
+        "mc_std": 4.4872,
+        "sign_stable_pct": 50.4
+      },
+      "width_mm": {
+        "base": 3.9008,
+        "mc_mean": 3.6629,
+        "mc_std": 0.1977,
+        "sign_stable_pct": 100.0
+      },
+      "C_M": {
+        "base": -2.6453,
+        "mc_mean": 6.1138,
+        "mc_std": 3.5536,
+        "sign_stable_pct": 5.0
+      },
+      "L_90": {
+        "base": 0.0143,
+        "mc_mean": 0.0153,
+        "mc_std": 0.0028,
+        "sign_stable_pct": 100.0
+      },
+      "mtf_h": {
+        "base": -110.0708,
+        "mc_mean": -28.1971,
+        "mc_std": 19.6243,
+        "sign_stable_pct": 93.6
+      },
+      "bew_h": {
+        "base": -1.7037,
+        "mc_mean": -0.2883,
+        "mc_std": 0.3517,
+        "sign_stable_pct": 81.0
+      }
+    },
+    "n_mc": 500,
+    "note": "AUC가 측정오차 하에서 좁게 유지 + 계수 부호 안정 → POD 강건"
+  }
+}

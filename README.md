@@ -5,7 +5,7 @@
 **Authors**: Chulhee Lee, Donggyou Kim, Dongku Kim, Junbeom An
 **Affiliation**: Korea Institute of Civil Engineering and Building Technology (KICT)
 **Target Journal**: IEEE Transactions on Instrumentation and Measurement (IEEE TIM)
-**Status**: Under preparation for submission (2026-06)
+**Status**: Major revision (manuscript TIM-26-05519) in preparation (2026-07)
 
 ---
 
@@ -19,7 +19,7 @@ The package is organized into two access modes:
 |------|---------|----------|---------|
 | **Tier 1** | Analysis code, processed CSVs, JSON results | This directory (`tier1_code_data/`) | Code: **MIT** / Data: **CC-BY 4.0** |
 | Tier 2 | Representative cam1 raw frames (Fig. 6) | Available from the corresponding author on reasonable request (preparation materials in `tier2_on_request/`) | **CC-BY 4.0** upon release |
-| Tier 3 | Full 50-condition raw image archive | Available from the corresponding author on reasonable request | — |
+| Tier 3 | Full 50-condition cam1 raw archive; cam2 real-crack frame archive (50 conditions, 737 frames, revision Secs 3.7/4.7) | Available from the corresponding author on reasonable request | — |
 
 ---
 
@@ -156,6 +156,30 @@ python code/phase1/sigma_motion_model.py       # sigma_motion_model.json (eta = 
 | `pod_predictions.csv` | 500 | width_mm, predicted_P(detect), pooled and gate-pass |
 | `sigma_motion_data.csv` | 53 | per-condition x camera sigma_motion vs sigma_theory (kinematic v . tau_int / GSD) |
 | `stratified_pod_curves.csv` | varies | IQ metric, split (high/low), width_mm, POD |
+
+---
+
+## Revision Addendum (Major Revision, 2026-07)
+
+The major revision of the manuscript added new analyses whose code and results are included in this repository under `tier1_code_data/{code,results_json,data}`:
+
+| Script (`code/`) | Result (`results_json/`, `data/`) | Manuscript location |
+|---|---|---|
+| `revision/wp3_diagnostics.py` | `revision/wp3_diagnostics.json` | Sec 4.6 — VIF/condition number, cross-validated AUC, calibration (Fig. 14, Table X) |
+| `revision/wp3_m0_cv.py` | `revision/wp3_m0_cv.json` | Sec 4.6 — width-only M0 cross-validated baseline |
+| `revision/wp2_monotonic_sensitivity.py` | `revision/wp2_monotonic_sensitivity.json` | Secs 3.4, 4.6 — label counts and monotonic-completion sensitivity (Table II) |
+| `revision/wp2_threshold_calibration.py` | `revision/wp2_threshold_calibration.json` | Sec 3.4 — visibility-score threshold (s = 0.08) calibration evidence |
+| `revision/wp2_borderline_figure.py` | — | Fig. 5 — borderline visibility examples |
+| `revision/wp5_psf_uncertainty.py` | `revision/wp5_psf_uncertainty.json` | Secs 4.5–4.6 — isotropic-PSF tests, repeatability, measurement-error Monte Carlo (Figs. 13, 15) |
+| `revision/wp4_thresholds_region.py` | `revision/wp4_thresholds_region.json` | Sec 5.2 — per-axis inversions and joint acceptance region (Table XI, Fig. 18) |
+| `revision/wp7_computational_cost.py`, `revision/wp7_exposure_optimized.py` | `revision/wp7_*.json` | Sec 5.3 — exposure-gate runtime measurements |
+| `revision/fig_r3_publication.py` | — | Figs. 13 and 15 (split publication versions) |
+| `real_crack/cnn_detect.py` | `data/real_crack/cam2_cnn_detection.csv` | Sec 3.7 — SegFormer-B4 per-frame segmentation of the 737 real-crack frames |
+| `real_crack/external_validation.py`, `real_crack/external_validation_prep.py` | `data/real_crack/cam2_realcrack_condition_summary.csv`, `data/real_crack/external_validation_table.csv` | Sec 4.7 — condition-level external validation (Fig. 16) |
+| `real_crack/threshold_sensitivity.py` | — | Sec 3.7 — decision-rule sensitivity sweeps |
+| `real_crack/fig_r1_composite.py` | — | Fig. 16(a) — three-regime overlay composite |
+
+Notes on reproduction: the CNN detector is the publicly released checkpoint `varcoder/segformer-b4-crack-segmentation-dataset` (Hugging Face), used without any adaptation; `real_crack/` scripts additionally require `torch` and `transformers`. The underlying cam2 real-crack frame archive (~47 GB) is not distributable through this repository and is available from the corresponding author upon reasonable request (Tier 3); `data/real_crack/cam2_real_crack_manifest.csv` documents the frame inventory. Figure/table numbers refer to the revised manuscript.
 
 ---
 

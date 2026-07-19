@@ -1,0 +1,58 @@
+{
+  "hardware": {
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.13.12"
+  },
+  "acquisition": {
+    "resolution": "8192x5460",
+    "fps_per_camera": 50,
+    "cameras": 2,
+    "budget_ms_per_frame": 20.0
+  },
+  "stages": {
+    "exposure_with_decode": {
+      "mean_ms": 459.09,
+      "std_ms": 4.63,
+      "min_ms": 453.82,
+      "reps": 8
+    },
+    "exposure_compute_only": {
+      "mean_ms": 68.71,
+      "std_ms": 1.31,
+      "min_ms": 64.57,
+      "reps": 20
+    },
+    "mtf_bew": {
+      "mean_ms": 10202.13,
+      "std_ms": 42.2,
+      "min_ms": 10137.12,
+      "reps": 5
+    },
+    "cnn_segformer": {
+      "mean_ms": 713.5,
+      "std_ms": 1.99,
+      "min_ms": 710.85,
+      "reps": 3,
+      "device": "mps"
+    }
+  },
+  "throughput_summary": {
+    "exposure_compute_only": {
+      "ms_per_frame": 68.71,
+      "throughput_fps": 14.6,
+      "meets_50fps": false
+    },
+    "mtf_bew": {
+      "ms_per_frame": 10202.13,
+      "throughput_fps": 0.1,
+      "meets_50fps": false
+    },
+    "cnn_segformer": {
+      "ms_per_frame": 713.5,
+      "throughput_fps": 1.4,
+      "meets_50fps": false
+    }
+  },
+  "interpretation": "IQ 게이팅(노출+광학)은 실시간 예산 내 실행 가능. CNN 검출기는 8K 프레임 타일링으로 프레임당 수백~수천 ms → 실시간 아님. 단 본 프레임워크는 취득 영상에 대한 offline acceptance-gating이며 CNN은 외적검증용 독립 검출기임."
+}

@@ -1,0 +1,6 @@
+{
+  "M0": 0.7012,
+  "M1": 0.7191,
+  "M2": 0.7064,
+  "note": "조건단위 GroupKFold 5-fold, wp3_diagnostics.py와 동일 파이프라인. M0 CV가 기준선: 정직한 IQ 판별 기여 = M1 CV - M0 CV."
+}

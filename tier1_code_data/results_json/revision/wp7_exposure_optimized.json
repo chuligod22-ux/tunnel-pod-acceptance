@@ -1,0 +1,44 @@
+{
+  "frame": "frame_000027.png",
+  "roi_px": 17853055,
+  "value_check": {
+    "naive": [
+      0.3678,
+      251.0
+    ],
+    "subsample4": [
+      0.3678,
+      251.0
+    ],
+    "histogram": [
+      0.3678,
+      251.0
+    ]
+  },
+  "bench": {
+    "naive_float_percentile": {
+      "mean_ms": 66.41,
+      "std_ms": 2.32,
+      "min_ms": 63.2,
+      "reps": 50,
+      "throughput_fps": 15.1,
+      "meets_20ms_budget": false
+    },
+    "subsample4_percentile": {
+      "mean_ms": 5.15,
+      "std_ms": 0.52,
+      "min_ms": 4.62,
+      "reps": 50,
+      "throughput_fps": 194.2,
+      "meets_20ms_budget": true
+    },
+    "histogram_percentile": {
+      "mean_ms": 9.09,
+      "std_ms": 0.17,
+      "min_ms": 8.85,
+      "reps": 50,
+      "throughput_fps": 110.0,
+      "meets_20ms_budget": true
+    }
+  }
+}

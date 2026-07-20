@@ -174,6 +174,7 @@ The major revision of the manuscript added new analyses whose code and results a
 | `revision/wp2_borderline_figure.py` | — | Fig. 5 — borderline visibility examples |
 | `revision/wp5_psf_uncertainty.py` | `revision/wp5_psf_uncertainty.json` | Secs 4.5–4.6 — isotropic-PSF tests, repeatability, measurement-error Monte Carlo (Figs. 13, 15) |
 | `revision/wp4_thresholds_region.py` | `revision/wp4_thresholds_region.json` | Sec 5.2 — threshold diagnostics (C_M sign reversal, MTF50 geometry confounding) and joint acceptance region (Fig. 18). The per-axis inversion points and their bootstrap CIs in Table XI are produced by `v2_analysis/A6_perAxis_thresholds.py` → `results_json/A6_perAxis_thresholds.json` |
+| `v2_analysis/A6_physical_range_check.py` | `results_json/A6_physical_range_check.json` | Sec 5.2 / Table XI — seed-fixed re-execution of the A6 bootstrap reporting the fraction of L_90 threshold replicates above the 8-bit ceiling (60/2000 = 3 %) and of C_M replicates outside [0, 1] |
 | `revision/wp7_computational_cost.py`, `revision/wp7_exposure_optimized.py` | `revision/wp7_*.json` | Sec 5.3 — exposure-gate runtime measurements |
 | `revision/fig_r3_publication.py` | — | Figs. 13 and 15 (split publication versions) |
 | `real_crack/cnn_detect.py` | `data/real_crack/cam2_cnn_detection.csv` | Sec 3.7 — SegFormer-B4 per-frame segmentation of the 737 real-crack frames |

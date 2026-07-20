@@ -1,0 +1,41 @@
+{
+  "method": "re-execution of A6_perAxis_thresholds.py cluster bootstrap (seed 20260511, B = 2000, 47 condition clusters, n = 470) reporting fractions of threshold replicates outside hard physical ranges",
+  "axes": {
+    "C_M": {
+      "n_finite_replicates": 2000,
+      "ci_2p5": -0.654761695251073,
+      "ci_97p5": 1.4980496778987487,
+      "physical_bounds": [
+        0.0,
+        1.0
+      ],
+      "n_below_physical_min": 141,
+      "n_above_physical_max": 81,
+      "fraction_below_physical_min": 0.0705,
+      "fraction_above_physical_max": 0.0405
+    },
+    "L_90": {
+      "n_finite_replicates": 2000,
+      "ci_2p5": 72.29344516063496,
+      "ci_97p5": 265.87861431668995,
+      "physical_bounds": [
+        0.0,
+        255.0
+      ],
+      "n_below_physical_min": 28,
+      "n_above_physical_max": 60,
+      "fraction_below_physical_min": 0.014,
+      "fraction_above_physical_max": 0.03
+    },
+    "mtf_h": {
+      "n_finite_replicates": 2000,
+      "ci_2p5": -0.614816370929266,
+      "ci_97p5": 0.43169208440097434
+    },
+    "bew_h": {
+      "n_finite_replicates": 2000,
+      "ci_2p5": 3.5347212451724275,
+      "ci_97p5": 7.340250191705325
+    }
+  }
+}

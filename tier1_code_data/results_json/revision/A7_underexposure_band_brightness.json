@@ -1,0 +1,80 @@
+{
+ "band_geometry": {
+  "top_margin": 0.03,
+  "concrete_bottom_at_6p5m": 0.79,
+  "col_margin": [
+   0.1,
+   0.9
+  ]
+ },
+ "conditions": {
+  "crack_d65_ISO100_V60": {
+   "speed_kmh": 60,
+   "iso": 100,
+   "dist_m": 6.5,
+   "n_frames": 21,
+   "band_mean_DN_mean": 28.39,
+   "band_mean_DN_min": 26.9,
+   "band_mean_DN_max": 29.57,
+   "per_frame": {
+    "frame_000011.png": 28.2,
+    "frame_000012.png": 28.46,
+    "frame_000013.png": 28.17,
+    "frame_000014.png": 28.55,
+    "frame_000015.png": 29.06,
+    "frame_000016.png": 29.03,
+    "frame_000017.png": 28.79,
+    "frame_000018.png": 28.99,
+    "frame_000019.png": 28.91,
+    "frame_000020.png": 29.26,
+    "frame_000021.png": 28.94,
+    "frame_000022.png": 28.67,
+    "frame_000023.png": 29.16,
+    "frame_000024.png": 29.57,
+    "frame_000025.png": 28.97,
+    "frame_000026.png": 27.09,
+    "frame_000027.png": 27.13,
+    "frame_000028.png": 27.17,
+    "frame_000029.png": 27.68,
+    "frame_000030.png": 27.59,
+    "frame_000031.png": 26.9
+   }
+  },
+  "crack_d65_ISO100_V80": {
+   "speed_kmh": 80,
+   "iso": 100,
+   "dist_m": 6.5,
+   "n_frames": 18,
+   "band_mean_DN_mean": 30.1,
+   "band_mean_DN_min": 28.77,
+   "band_mean_DN_max": 30.73,
+   "per_frame": {
+    "frame_000019.png": 28.77,
+    "frame_000020.png": 28.98,
+    "frame_000021.png": 29.6,
+    "frame_000022.png": 29.7,
+    "frame_000023.png": 29.68,
+    "frame_000024.png": 30.13,
+    "frame_000025.png": 30.09,
+    "frame_000026.png": 30.58,
+    "frame_000027.png": 30.32,
+    "frame_000028.png": 30.23,
+    "frame_000029.png": 30.73,
+    "frame_000030.png": 30.53,
+    "frame_000031.png": 30.37,
+    "frame_000032.png": 30.56,
+    "frame_000033.png": 30.61,
+    "frame_000034.png": 30.38,
+    "frame_000035.png": 30.2,
+    "frame_000036.png": 30.42
+   }
+  }
+ },
+ "summary": {
+  "statement": "mean grey level of the concrete band at 6.5 m / ISO 100 is approximately 28 DN out of 255",
+  "condition_means_DN": [
+   28.39,
+   30.1
+  ]
+ }
+}

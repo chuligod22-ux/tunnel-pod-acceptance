@@ -118,7 +118,9 @@ python code/v2_analysis/A4_per_width_detection.py
 python code/v2_analysis/A5_extended_logistic_pod.py
 python code/v2_analysis/A5b_extended_logistic_with_sigma.py
 
-# 7. Numerical inversion at a* = 0.5 mm -> per-axis IQ thresholds (Sec 5.2, Table IX / Fig. F12)
+# 7. Numerical inversion at a* = 0.5 mm -> per-axis IQ thresholds and their
+#    cluster-bootstrap CIs (B = 2000, fixed seed) reported in Table XI of the
+#    revised manuscript (Table IX of the original submission; flowchart Fig. 6)
 python code/v2_analysis/A6_perAxis_thresholds.py
 
 # 8. Regenerate v2 figures (F5-F12; F6 = Representative Imagery, NEW in v21)
@@ -171,7 +173,7 @@ The major revision of the manuscript added new analyses whose code and results a
 | `revision/wp2_threshold_calibration.py` | `revision/wp2_threshold_calibration.json` | Sec 3.4 — visibility-score threshold (s = 0.08) calibration evidence |
 | `revision/wp2_borderline_figure.py` | — | Fig. 5 — borderline visibility examples |
 | `revision/wp5_psf_uncertainty.py` | `revision/wp5_psf_uncertainty.json` | Secs 4.5–4.6 — isotropic-PSF tests, repeatability, measurement-error Monte Carlo (Figs. 13, 15) |
-| `revision/wp4_thresholds_region.py` | `revision/wp4_thresholds_region.json` | Sec 5.2 — per-axis inversions and joint acceptance region (Table XI, Fig. 18) |
+| `revision/wp4_thresholds_region.py` | `revision/wp4_thresholds_region.json` | Sec 5.2 — threshold diagnostics (C_M sign reversal, MTF50 geometry confounding) and joint acceptance region (Fig. 18). The per-axis inversion points and their bootstrap CIs in Table XI are produced by `v2_analysis/A6_perAxis_thresholds.py` → `results_json/A6_perAxis_thresholds.json` |
 | `revision/wp7_computational_cost.py`, `revision/wp7_exposure_optimized.py` | `revision/wp7_*.json` | Sec 5.3 — exposure-gate runtime measurements |
 | `revision/fig_r3_publication.py` | — | Figs. 13 and 15 (split publication versions) |
 | `real_crack/cnn_detect.py` | `data/real_crack/cam2_cnn_detection.csv` | Sec 3.7 — SegFormer-B4 per-frame segmentation of the 737 real-crack frames |

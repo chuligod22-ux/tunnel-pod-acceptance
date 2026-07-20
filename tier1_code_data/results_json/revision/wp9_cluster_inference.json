@@ -1,0 +1,96 @@
+{
+  "n_rows": 470,
+  "n_clusters": 47,
+  "seed": 20260511,
+  "B_bootstrap": 2000,
+  "R_cv_repeats": 200,
+  "k_folds": 5,
+  "apparent_auc_m0": 0.7314430852166701,
+  "apparent_auc_m1": 0.8397781463819199,
+  "apparent_delta_auc": 0.10833506116524982,
+  "bootstrap_paired_delta_auc": {
+    "n_valid": 2000,
+    "n_failed": 0,
+    "mean": 0.12755592293470377,
+    "ci_2p5": 0.04135525731229293,
+    "ci_97p5": 0.23740791517370977,
+    "fraction_leq_0": 0.0
+  },
+  "repeated_grouped_cv": {
+    "note": "distribution over fold shuffles on the fixed dataset; quantifies fold-construction variability, not sampling uncertainty of new conditions",
+    "mean_auc_m0": 0.6977493261455525,
+    "mean_auc_m1": 0.7008161414057639,
+    "mean_delta_auc": 0.003066815260211489,
+    "pct_2p5": -0.09261643427327383,
+    "pct_97p5": 0.0897532008086254,
+    "fraction_leq_0": 0.445
+  },
+  "gee_m1_standardized": {
+    "working_correlation": "independence",
+    "width_mm": {
+      "coef": 1.1204058230593155,
+      "robust_se": 0.21029689813771565,
+      "z": 5.327733471016787,
+      "p": 9.944590733361468e-08,
+      "sign_matches_ordinary_logit": true
+    },
+    "C_M": {
+      "coef": -0.206433761938646,
+      "robust_se": 0.4001681928382405,
+      "z": -0.5158674918026093,
+      "p": 0.6059469601725285,
+      "sign_matches_ordinary_logit": true
+    },
+    "L_90": {
+      "coef": 0.9569531596479599,
+      "robust_se": 0.4340137760213652,
+      "z": 2.204891209722458,
+      "p": 0.02746172949543184,
+      "sign_matches_ordinary_logit": true
+    },
+    "mtf_h": {
+      "coef": -1.5775989270272444,
+      "robust_se": 0.5000610461187598,
+      "z": -3.154812675915931,
+      "p": 0.0016060118502455709,
+      "sign_matches_ordinary_logit": true
+    },
+    "bew_h": {
+      "coef": -1.2019342909369548,
+      "robust_se": 0.4339783484401001,
+      "z": -2.769572019565515,
+      "p": 0.0056129993480951105,
+      "sign_matches_ordinary_logit": true
+    }
+  },
+  "mixed_effects_m1_standardized_vb": {
+    "converged": true,
+    "random_intercept_sd_posterior_mean": 7.066851330061339,
+    "fixed_effects": {
+      "Intercept": {
+        "post_mean": 5.179292046814018,
+        "post_sd": 0.26861648291089285
+      },
+      "width_mm": {
+        "post_mean": 4.595987571359238,
+        "post_sd": 0.28474662548571034
+      },
+      "C_M": {
+        "post_mean": 0.27344833727302337,
+        "post_sd": 0.28883019013663475
+      },
+      "L_90": {
+        "post_mean": 2.0417611506499855,
+        "post_sd": 0.2901320767077961
+      },
+      "mtf_h": {
+        "post_mean": -2.1271719387233996,
+        "post_sd": 0.28973253233998625
+      },
+      "bew_h": {
+        "post_mean": -1.291825061534019,
+        "post_sd": 0.34041770419076006
+      }
+    }
+  }
+}

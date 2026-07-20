@@ -12,14 +12,22 @@ model-fit comparisons. This script provides the cluster-aware evidence:
   (2) repeated grouped 5-fold cross-validation (R = 200 fold shuffles,
       folds split at the condition level) giving the distribution of the
       paired out-of-sample DeltaAUC;
-  (3) GEE logistic fit of M1 (exchangeable working correlation,
-      cluster-robust standard errors, standardized covariates) as
-      cluster-aware coefficient inference;
+  (3) GEE logistic fit of M1 with condition-cluster-robust standard
+      errors and standardized covariates as cluster-aware coefficient
+      inference. An exchangeable working correlation is attempted first;
+      if it yields NaN estimates under the quasi-separation induced by
+      the monotonic completion, the prespecified independence working
+      correlation is used instead, and the working correlation actually
+      used is recorded in the output JSON (key "working_correlation").
+      In the published run the independence fallback converged;
   (4) a mixed-effects logistic sensitivity fit with a condition random
       intercept (variational Bayes, standardized covariates); if the fit
       does not converge this is recorded honestly in the output JSON.
 
 Output: results_json/revision/wp9_cluster_inference.json
+Environment: see ENVIRONMENT_SNAPSHOT.md at the repository root for the
+exact package versions of the published run (seed 20260511, B = 2000,
+R = 200, grouped folds = 5).
 """
 import json
 from pathlib import Path
@@ -37,8 +45,6 @@ warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 HERE = Path(__file__).parent
 LONG = HERE.parent.parent / "data" / "long_v3.csv"
-if not LONG.exists():
-    LONG = Path("/Users/lch/home/code/tunnelscanning/tmp/v2_analysis/long_v3.csv")
 OUT = HERE.parent.parent / "results_json" / "revision" / "wp9_cluster_inference.json"
 
 PRED_M0 = ["width_mm"]

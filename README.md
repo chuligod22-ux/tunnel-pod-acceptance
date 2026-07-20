@@ -30,7 +30,8 @@ supplementary/
 ├── README.md                       # This file
 ├── LICENSE-CODE-MIT.txt            # MIT License (code)
 ├── LICENSE-DATA-CC-BY-4.0.txt      # CC-BY 4.0 (data)
-├── requirements.txt                # Python dependencies
+├── requirements.txt                # Python dependencies (minimum versions)
+├── ENVIRONMENT_SNAPSHOT.md         # Exact environment of the published runs (pip freeze, seeds)
 │
 ├── tier1_code_data/
 │   ├── code/
@@ -88,6 +89,14 @@ supplementary/
   ```
 
 Core libraries: NumPy, SciPy, statsmodels, scikit-learn, pandas, matplotlib.
+
+`requirements.txt` specifies minimum versions only. The exact environment of
+the published runs (full `pip freeze`, Python/OS versions, and the fixed seeds
+and repetition counts of the revision analyses, e.g. seed 20260511, B = 2000,
+R = 200, grouped folds = 5 for `revision/wp9_cluster_inference.py`) is recorded
+in `ENVIRONMENT_SNAPSHOT.md`. Bootstrap confidence-interval trailing digits can
+drift across library versions; the published JSON files are the canonical
+record.
 
 ---
 
@@ -175,7 +184,7 @@ The major revision of the manuscript added new analyses whose code and results a
 | `revision/wp5_psf_uncertainty.py` | `revision/wp5_psf_uncertainty.json` | Secs 4.5–4.6 — isotropic-PSF tests, repeatability, measurement-error Monte Carlo (Figs. 13, 15) |
 | `revision/wp4_thresholds_region.py` | `revision/wp4_thresholds_region.json` | Sec 5.2 — threshold diagnostics (C_M sign reversal, MTF50 geometry confounding) and joint acceptance region (Fig. 18). The per-axis inversion points and their bootstrap CIs in Table XI are produced by `v2_analysis/A6_perAxis_thresholds.py` → `results_json/A6_perAxis_thresholds.json` |
 | `v2_analysis/A6_physical_range_check.py` | `results_json/A6_physical_range_check.json` | Sec 5.2 / Table XI — seed-fixed re-execution of the A6 bootstrap reporting the fraction of L_90 threshold replicates above the 8-bit ceiling (60/2000 = 3 %) and of C_M replicates outside [0, 1] |
-| `revision/wp9_cluster_inference.py` | `results_json/revision/wp9_cluster_inference.json` | Secs 4.5–4.6 — cluster-aware incremental-value analyses: paired condition-cluster bootstrap ΔAUC(M1−M0) = 0.108, 95 % CI [0.04, 0.24]; 200 repeated grouped 5-fold shuffles (mean out-of-sample ΔAUC 0.003, percentiles −0.09 to +0.09); mixed-effects random-intercept sensitivity fit; GEE failure recorded (B = 2000, R = 200, seed 20260511) |
+| `revision/wp9_cluster_inference.py` | `results_json/revision/wp9_cluster_inference.json` | Secs 4.5–4.6 — cluster-aware incremental-value analyses: paired condition-cluster bootstrap ΔAUC(M1−M0) = 0.108, 95 % CI [0.04, 0.24]; 200 repeated grouped 5-fold shuffles (mean out-of-sample ΔAUC 0.003, percentiles −0.09 to +0.09); mixed-effects random-intercept sensitivity fit; exchangeable-GEE instability with successful independence-working-correlation fallback (condition-cluster-robust SEs) recorded in the JSON (B = 2000, R = 200, seed 20260511) |
 | `revision/wp7_computational_cost.py`, `revision/wp7_exposure_optimized.py` | `revision/wp7_*.json` | Sec 5.3 — exposure-gate runtime measurements |
 | `revision/fig_r3_publication.py` | — | Figs. 13 and 15 (split publication versions) |
 | `real_crack/cnn_detect.py` | `data/real_crack/cam2_cnn_detection.csv` | Sec 3.7 — SegFormer-B4 per-frame segmentation of the 737 real-crack frames |
